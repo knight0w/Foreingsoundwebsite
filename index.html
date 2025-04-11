@@ -34,6 +34,33 @@
             padding: 40px 0;
             background-color: #f4f4f9;
         }
+        .text-container-p {
+            max-width: none;
+            margin: 0 auto 20px auto;
+            font-size: 10px;
+            line-height: 1.4;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 0 20px;
+            word-wrap: break-word;
+            white-space: normal;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+        }
+        .releases-title {
+            font-size: 10px;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
         .text-container {
             position: absolute;
             top: calc(100vh + 800px);
@@ -54,31 +81,6 @@
             text-transform: uppercase;
             white-space: nowrap;
         }
-        .releases-title {
-            font-size: 10px;
-            color: #333;
-            font-family: 'Arial', sans-serif;
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-        .text-container-p {
-            max-width: none;
-            margin: 0 auto 20px auto;
-            font-size: 10px;
-            line-height: 1.4;
-            color: #333;
-            font-family: 'Arial', sans-serif;
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            padding: 0 20px;
-            word-wrap: break-word;
-            white-space: normal;
-            width: 100%;
-            box-sizing: border-box;
-        }
         @media screen and (max-width: 768px) {
             .text-container-p {
                 font-size: 8px;
@@ -88,11 +90,12 @@
         }
         .copyright-container {
             position: absolute;
-            top: calc(100vh + 800px + 704px + 0px);
+            top: calc(100vh + 800px);
             width: 100%;
             text-align: center;
             padding: 20px 0;
             background-color: #f4f4f9;
+            z-index: 1;
         }
         .copyright-text {
             font-size: 10px;
@@ -101,6 +104,7 @@
             font-weight: bold;
             letter-spacing: 1px;
             text-transform: uppercase;
+            margin: 0;
         }
         .spotify-embed-container {
             width: 56.4%;
